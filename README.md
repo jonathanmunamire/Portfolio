@@ -49,7 +49,15 @@ $ npx eslint .
 ## Author
 Credentials:
 Email: jonathanmunamire@gmail.com
+
 ## Show your support
-Give a star if you like this project
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Thank You [Microverse](www.microverse.org) team that help me with the template of this project.
+- Thanks to everyone who will get time to check this code and suggest any issue to improve the page.
+
 ## Licence
 This project is [MIT](MIT.md) licensed.
