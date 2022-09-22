@@ -10,4 +10,4 @@ Email: jonathanmunamire@gmail.com
 ## Show your support
 Give a star if you like this project
 ## Licence
-This project is [MIT](https://choosealicense.com/licenses/mit/) licensed.
+This project is [MIT](MIT.md) licensed.
