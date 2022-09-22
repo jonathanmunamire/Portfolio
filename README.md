@@ -1,9 +1,12 @@
-# Project Name
-The project Name is **Portfolio**
+![](https://img.shields.io/badge/Microverse-blueviolet)
+# PORTFOLIO
+
 # Build With
 Html&Css
+
 # Description
-This is a project to build my first Portfolio using Html and Css
+> This is a project to built for my first Portfolio 
+
 ## Getting Started
 
 You can have a copy of this repo run on your local machine by just directly cloning it
