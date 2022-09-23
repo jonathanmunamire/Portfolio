@@ -116,8 +116,7 @@ ul li {
   background-color: #fff;
   border-radius: 16px;
   padding: 16px;
-  border: 1px solid #DFE1E6
-
+  border: 1px solid #dfe1e6;
 }
 
 .card2 {
@@ -127,7 +126,7 @@ ul li {
   background-color: #fff;
   border-radius: 16px;
   padding: 16px;
-  border: 1px solid #DFE1E6
+  border: 1px solid #dfe1e6;
 }
 
 .card3 {
@@ -137,7 +136,7 @@ ul li {
   background-color: #fff;
   border-radius: 16px;
   padding: 16px;
-  border: 1px solid #DFE1E6
+  border: 1px solid #dfe1e6;
 }
 
 .card4 {
@@ -147,7 +146,7 @@ ul li {
   background-color: #fff;
   border-radius: 16px;
   padding: 16px;
-  border: 1px solid #DFE1E6
+  border: 1px solid #dfe1e6;
 }
 
 .works img {
@@ -159,13 +158,12 @@ ul li {
 }
 
 .title {
-  font-family: Poppins;
+  font-family: "Poppins", sans-serif;
   font-size: 32px;
   font-weight: 700;
   line-height: 44px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
-
 }
 
 .highlights {
@@ -187,17 +185,15 @@ img.counter {
   width: 8px;
   left: 67px;
   top: 12px;
-  border-radius: 0px;
-
+  border-radius: 0;
 }
 
 .description {
   height: 76px;
   width: 295px;
-  left: 0px;
+  left: 0;
   top: 92px;
   border-radius: nullpx;
-
 }
 
 .languages {
@@ -218,6 +214,7 @@ img.counter {
   padding: 0.4rem;
   border-radius: 10px;
 }
+
 .btn {
   padding: 1em;
   border: 1px solid #396df2;
@@ -228,10 +225,9 @@ img.counter {
   letter-spacing: 0.03em;
   text-align: center;
   color: #396df2;
-
 }
 
-.resume{
+.resume {
   padding-left: 6%;
 }
 
@@ -244,12 +240,14 @@ img.counter {
 }
 
 .lfs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
-
 }
 
 .downmenus ul {
@@ -272,13 +270,6 @@ img.counter {
   top: 12px;
   bottom: 12px;
   border-radius: 8px;
-  
-}
-
-.lfs {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 }
 
 hr {
@@ -286,7 +277,7 @@ hr {
   width: 327px;
   right: 20px;
   top: 71px;
-  border-radius: 0px;
+  border-radius: 0;
 }
 
 .arrow {
@@ -294,6 +285,5 @@ hr {
   width: 15px;
   left: 6px;
   top: 9px;
-  border-radius: 0px;
-
+  border-radius: 0;
 }
