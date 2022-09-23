@@ -97,13 +97,16 @@ ul li {
   list-style-type: none;
 }
 
+.then {
+  background: #f7f7f9;
+}
+
 .works {
   display: grid;
   width: 100%;
   background: #f7f7f9;
   justify-items: center;
   margin-top: 100px;
-  margin-bottom: 30px;
   padding-top: 20%;
   padding-bottom: 10%;
   row-gap: 100px;
@@ -225,10 +228,32 @@ img.counter {
   letter-spacing: 0.03em;
   text-align: center;
   color: #396df2;
+  transition: transform;
+}
+
+.btn:hover {
+  background: #89abff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn:active {
+  background: #0549f3;
+  color: #fff;
+}
+
+.b {
+  background: #fff;
+  color: black;
 }
 
 .resume {
   padding-left: 6%;
+}
+
+.about {
+  background-color: #fff;
+  border-top-right-radius: 5em;
 }
 
 .downmenus {
