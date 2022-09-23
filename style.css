@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 20%;
+  align-items: center;
+  font-size: 200%;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #6070ff;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+}
+
+.nav div {
+  height: 2px;
+  background-color: #6070ff;
+  margin: 3px 0;
+  border-radius: 25px;
+  width: 20px;
+}
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  background-image: url(header-shapesmobile.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100%;
+}
+
+.greet {
+  font-size: 40px;
+  line-height: 52px;
+  font-weight: 700;
+  color: #172b4d;
+  width: 80%;
+  margin-left: 6.4%;
+  padding-top: 15%;
+  margin-bottom: 0;
+}
+
+.presentation {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #344563;
+  line-height: 24px;
+  margin-bottom: 0;
+  width: 85%;
+  margin-left: 6.5%;
+}
+
+.connexion a {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  text-decoration: none;
+  color: #7f8cff;
+  margin-left: 6.5%;
+}
+
+.social .icons {
+  width: 150px;
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 6.4%;
+}
+
+ul li {
+  list-style-type: none;
+}
