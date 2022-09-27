@@ -312,3 +312,23 @@ hr {
   top: 9px;
   border-radius: 0;
 }
+
+footer {
+
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin:103px 24px 0 24px ;
+}
+
+label {
+  /* width: 100%; */
+}
+
+input, 
+textarea {
+  width: 100%;
+  margin-bottom: 20px;
+}
