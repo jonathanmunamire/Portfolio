@@ -5,7 +5,6 @@ body {
   margin: 0;
   font-family: "Poppins", sans-serif;
   background: #f7f7f9;
-
 }
 
 main {
@@ -67,6 +66,7 @@ main {
   padding-top: 15%;
   margin-bottom: 0;
 }
+
 .presentation {
   font-style: normal;
   font-weight: 400;
@@ -387,9 +387,8 @@ textarea {
 
 /*    Big Screen Css Codes      */
 
-@media screen and (min-width: 768px){
-
-  .logo{
+@media screen and (min-width: 768px) {
+  .logo {
     flex: 3;
     margin-left: 17%;
     padding-top: 2%;
@@ -444,7 +443,7 @@ textarea {
     padding-left: 260px;
     padding-right: 260px;
   }
-  
+
   .greet {
     font-size: 32px;
     line-height: 52px;
@@ -454,6 +453,7 @@ textarea {
     margin-left: 6.4%;
     margin-bottom: 0;
   }
+
   .greet h1 {
     margin-right: 50%;
     line-height: 60px;
@@ -470,6 +470,7 @@ textarea {
     width: 85%;
     margin-left: 6.5%;
   }
+
   .presentation p {
     line-height: 25px;
   }
@@ -612,7 +613,7 @@ textarea {
   }
 
   .about .greet h1 {
-    padding-right: 70%
+    padding-right: 70%;
   }
 
   .downmenus {
@@ -624,7 +625,7 @@ textarea {
     padding-left: 0%;
   }
 
-  .lfs{
+  .lfs {
     padding-bottom: 3%;
     padding-right: 10%;
   }
@@ -660,6 +661,4 @@ textarea {
   .cffu {
     color: #0549f3;
   }
-  
-
 }
