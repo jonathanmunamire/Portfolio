@@ -57,14 +57,19 @@ main {
 }
 
 .greet {
-  font-size: 40px;
+  font-size: 30px;
   line-height: 52px;
   font-weight: 700;
   color: #172b4d;
   width: 80%;
   margin-left: 6.4%;
   padding-top: 15%;
-  margin-bottom: 0;
+  padding-bottom: 0%;
+}
+
+.greet h1 {
+  margin-bottom: 0%;
+  padding-top: 30%;
 }
 
 .presentation {
@@ -206,6 +211,8 @@ img.counter {
   flex-direction: row;
   padding-left: 0%;
   width: 80%;
+  padding-top: 10%;
+  margin-right: 0%;
 }
 
 .stack {
@@ -407,7 +414,7 @@ textarea {
   .nav div {
     height: 2px;
     background-color: #fff;
-    font-size: 16px;
+    font-size: 15px;
     margin: 3px 0;
     border-radius: 25px;
     width: 20px;
@@ -415,7 +422,8 @@ textarea {
 
   .nav a {
     text-decoration: none;
-    color: #6070ff;
+    color: #344563;
+    font-weight: 500;
   }
 
   .header {
@@ -426,7 +434,6 @@ textarea {
     height: 20%;
     align-items: center;
     font-size: 200%;
-    padding-bottom: 2%;
   }
 
   .headline {
@@ -455,9 +462,10 @@ textarea {
   }
 
   .greet h1 {
+    margin-bottom: 0%;
+    padding-top: 20%;
     margin-right: 50%;
     line-height: 60px;
-    margin-bottom: 0%;
   }
 
   .presentation {
@@ -572,6 +580,10 @@ textarea {
     padding-left: 5%;
   }
 
+  .languages {
+    padding-top: 0%;
+  }
+
   .about {
     display: flex;
     flex-direction: row;
@@ -612,8 +624,13 @@ textarea {
     height: 90vh;
   }
 
-  .about .greet h1 {
+  .about .greet h2 {
     padding-right: 70%;
+    margin-bottom: 5%;
+  }
+
+  .about p {
+    font-size: 16px;
   }
 
   .downmenus {
@@ -628,6 +645,8 @@ textarea {
   .lfs {
     padding-bottom: 3%;
     padding-right: 10%;
+    color: #344563;
+    font-size: 20px;
   }
 
   .downmenus2 {
@@ -656,9 +675,5 @@ textarea {
     padding-right: 30%;
     margin-left: 24px;
     margin-right: 24px;
-  }
-
-  .cffu {
-    color: #0549f3;
   }
 }
