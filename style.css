@@ -131,6 +131,10 @@ main {
   margin-left: 6.4%;
 }
 
+.icons > li > a:hover {
+  filter: blur(1px);
+}
+
 ul li {
   list-style-type: none;
 }
