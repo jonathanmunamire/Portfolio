@@ -75,15 +75,19 @@ main {
   from {
     color: #172b4d;
   }
+
   25% {
     color: #7a869a;
   }
+
   50% {
     color: #89abff;
   }
+
   75% {
     color: #7a869a;
   }
+
   to {
     color: #172b4d;
   }
