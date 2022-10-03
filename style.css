@@ -4,6 +4,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Poppins", sans-serif;
+  background: #f7f7f9;
 }
 
 main {
@@ -14,6 +15,7 @@ main {
 }
 
 .header {
+  background-color: #fff;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -30,11 +32,13 @@ main {
   font-weight: 700;
   line-height: 20px;
   text-align: center;
+  transition-duration: 1s;
 }
 
 .nav div {
   height: 2px;
   background-color: #6070ff;
+  font-size: 0%;
   margin: 3px 0;
   border-radius: 25px;
   width: 20px;
@@ -44,20 +48,54 @@ main {
   display: flex;
   flex-direction: column;
   background-image: url(header-shapesmobile.png);
+  background-color: #fff;
+  border-bottom-left-radius: 5em;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: contain;
+  background-position: 100%;
   height: 100%;
+  padding-bottom: 20%;
 }
 
 .greet {
-  font-size: 40px;
+  font-size: 30px;
   line-height: 52px;
   font-weight: 700;
   color: #172b4d;
   width: 80%;
   margin-left: 6.4%;
   padding-top: 15%;
-  margin-bottom: 0;
+  padding-bottom: 0%;
+  animation-name: changecolor;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes changecolor {
+  from {
+    color: #172b4d;
+  }
+
+  25% {
+    color: #7a869a;
+  }
+
+  50% {
+    color: #89abff;
+  }
+
+  75% {
+    color: #7a869a;
+  }
+
+  to {
+    color: #172b4d;
+  }
+}
+
+.greet h1 {
+  margin-bottom: 0%;
+  padding-top: 30%;
 }
 
 .presentation {
@@ -93,12 +131,12 @@ main {
   margin-left: 6.4%;
 }
 
-ul li {
-  list-style-type: none;
+.icons > li > a:hover {
+  filter: blur(1px);
 }
 
-.then {
-  background: #f7f7f9;
+ul li {
+  list-style-type: none;
 }
 
 .works {
@@ -106,7 +144,6 @@ ul li {
   width: 100%;
   background: #f7f7f9;
   justify-items: center;
-  margin-top: 100px;
   padding-top: 20%;
   padding-bottom: 10%;
   row-gap: 100px;
@@ -204,6 +241,8 @@ img.counter {
   flex-direction: row;
   padding-left: 0%;
   width: 80%;
+  padding-top: 10%;
+  margin-right: 0%;
 }
 
 .stack {
@@ -260,8 +299,10 @@ img.counter {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  justify-content: space-betwee;
   height: 100vh;
   padding-right: 20%;
+  margin-bottom: 0%;
 }
 
 .lfs {
@@ -275,11 +316,11 @@ img.counter {
   text-align: left;
 }
 
-.downmenus ul {
+.downmenus2 {
   display: flex;
   flex-direction: column;
-  justify-content: space-betwen;
-  height: 20vh;
+  justify-content: space-between;
+  height: 40vh;
   padding-left: 0%;
   padding-right: 20%;
 }
@@ -289,7 +330,7 @@ img.counter {
   flex-direction: row;
   margin-right: 80%;
   background-color: #f7f7f9;
-  height: 10%;
+  height: 30%;
   width: 303px;
   left: 12px;
   top: 12px;
@@ -311,4 +352,358 @@ hr {
   left: 6px;
   top: 9px;
   border-radius: 0;
+}
+
+footer {
+  background-color: #6070ff;
+  border-top-left-radius: 4em;
+  background-image: url(shapes-contact-mobile.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+input,
+textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.foot-title {
+  align-self: center;
+  color: #fff;
+  margin-bottom: 0%;
+  margin-top: 10%;
+  font-weight: 700;
+  font-size: 37px;
+}
+
+.foot-headline {
+  color: #fff;
+  text-align: center;
+  font-style: bold;
+  font-weight: 400;
+  font-size: 18px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.foot-nm {
+  height: 48px;
+  width: 327px;
+  left: 0;
+  top: 0;
+  border-radius: 8px;
+}
+
+.foot-message {
+  height: 170px;
+  width: 327px;
+  left: 0;
+  top: 0;
+  border-radius: 8px;
+}
+
+.foot-button {
+  margin-bottom: 10%;
+  height: 48px;
+  width: 140px;
+  left: 24px;
+  top: 5317px;
+  border-radius: 8px;
+  padding: 12px 16px 12px 16px;
+}
+
+/*    Big Screen Css Codes      */
+
+@media screen and (min-width: 768px) {
+  .logo {
+    flex: 3;
+    margin-left: 17%;
+    padding-top: 2%;
+  }
+
+  .nav {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #0549f3;
+    font-family: "Poppins", sans-serif;
+    margin-right: 15%;
+  }
+
+  .nav div {
+    height: 2px;
+    background-color: #fff;
+    font-size: 15px;
+    margin: 3px 0;
+    border-radius: 25px;
+    width: 20px;
+  }
+
+  .nav a {
+    text-decoration: none;
+    color: #344563;
+    font-weight: 500;
+  }
+
+  .header {
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 20%;
+    align-items: center;
+    font-size: 200%;
+  }
+
+  .headline {
+    display: flex;
+    flex-direction: column;
+    background-image: url(HeaderWidebg@2x.png);
+    background-color: #fff;
+    border-bottom-left-radius: 10em;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 100%;
+    height: 100%;
+    padding-bottom: 20%;
+    padding-left: 260px;
+    padding-right: 260px;
+  }
+
+  .greet {
+    font-size: 32px;
+    line-height: 52px;
+    font-weight: 700;
+    color: #172b4d;
+    width: 80%;
+    margin-left: 6.4%;
+    margin-bottom: 0;
+  }
+
+  .greet h1 {
+    margin-bottom: 0%;
+    padding-top: 20%;
+    margin-right: 50%;
+    line-height: 60px;
+  }
+
+  .presentation {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    color: #344563;
+    line-height: 24px;
+    margin-bottom: 0;
+    width: 85%;
+    margin-left: 6.5%;
+  }
+
+  .presentation p {
+    line-height: 25px;
+  }
+
+  .works {
+    padding-top: 10%;
+  }
+
+  .card1 {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 58vh;
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 16px;
+    border: 1px solid #dfe1e6;
+  }
+
+  .card1 img {
+    flex: 1;
+  }
+
+  div.elements1 {
+    flex: 1;
+    padding-left: 5%;
+  }
+
+  .highlights {
+    margin-right: 50%;
+  }
+
+  .description {
+    margin-right: 1px;
+    width: 500px;
+  }
+
+  .btn {
+    margin-top: 5%;
+  }
+
+  .card2 {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 80%;
+    height: 58vh;
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 16px;
+    border: 1px solid #dfe1e6;
+  }
+
+  .card2 img {
+    flex: 1;
+  }
+
+  div.elements2 {
+    flex: 1;
+    padding-left: 5%;
+  }
+
+  .card3 {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 58vh;
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 16px;
+    border: 1px solid #dfe1e6;
+  }
+
+  .card3 img {
+    flex: 1;
+  }
+
+  div.elements3 {
+    flex: 1;
+    padding-left: 5%;
+  }
+
+  .card4 {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 80%;
+    height: 58vh;
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 16px;
+    border: 1px solid #dfe1e6;
+  }
+
+  .card4 img {
+    flex: 1;
+  }
+
+  div.elements4 {
+    flex: 1;
+    padding-left: 5%;
+  }
+
+  .languages {
+    padding-top: 0%;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    padding-left: 6%;
+    padding-bottom: 0%;
+    margin-bottom: 0%;
+    padding-right: 0%;
+  }
+
+  .jhc {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2%;
+    padding-top: 2%;
+    margin-right: 8%;
+    background-color: #f7f7f9;
+    height: 16vh;
+    width: 18vw;
+    left: 12px;
+    top: 12px;
+    padding-bottom: 10px;
+    border-radius: 8px;
+  }
+
+  .jhc img {
+    height: 8vh;
+    width: 4vw;
+  }
+
+  .about1 {
+    padding-bottom: 0%;
+    height: 100vh;
+  }
+
+  .about2 {
+    display: flex;
+    height: 90vh;
+  }
+
+  .about .greet h2 {
+    padding-right: 70%;
+    margin-bottom: 5%;
+  }
+
+  .about p {
+    font-size: 16px;
+  }
+
+  .downmenus {
+    margin-bottom: 50%;
+    margin-top: 17%;
+    justify-content: unset;
+    width: 59vw;
+    padding-right: 5%;
+    padding-left: 0%;
+  }
+
+  .lfs {
+    padding-bottom: 3%;
+    padding-right: 10%;
+    color: #344563;
+    font-size: 20px;
+  }
+
+  .downmenus2 {
+    display: flex;
+    flex-direction: row;
+    height: 15vh;
+    padding-left: 0%;
+    padding-right: 20%;
+    padding-bottom: 7%;
+  }
+
+  footer {
+    background-color: #6070ff;
+    border-top-left-radius: 4em;
+    background-image: url(contactformbackgroundshapes@2x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 100%;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 30%;
+    padding-right: 30%;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
 }
