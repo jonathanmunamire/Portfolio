@@ -18,6 +18,10 @@ You can have a copy of this repo run on your local machine by just directly clon
 3. - [ ] Run `git clone https://github.com/jonathanmunamire/Portfolio.git`
 4. - [ ] Run `npm install` to install the necessary modules
 
+### Link to the website
+
+https://jonathanmunamire.github.io/Portfolio/
+
 ### Prerequisites
 
 - npm
