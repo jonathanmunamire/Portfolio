@@ -18,13 +18,14 @@ main {
   background-color: #fff;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   height: 20%;
   align-items: center;
   font-size: 200%;
 }
 
 .logo a {
+  margin-left: 30px;
   text-decoration: none;
   color: #001aff;
   font-family: "Poppins", sans-serif;
@@ -35,13 +36,28 @@ main {
   transition-duration: 1s;
 }
 
-.nav div {
-  height: 2px;
-  background-color: #6070ff;
-  font-size: 0%;
-  margin: 3px 0;
-  border-radius: 25px;
+.nav {
+  display: flex;
+  margin-right: 10%;
+}
+
+.nav ul {
+  display: none;
+}
+
+.hamburger {
+  display: flex;
+  gap: 3px;
+  flex-direction: column;
+  height: 4px;
   width: 20px;
+}
+
+.bar {
+  background-color: #001aff;
+  border-radius: 5em;
+  height: 3px;
+  width: 30px;
 }
 
 .headline {
@@ -408,45 +424,40 @@ textarea {
   padding: 12px 16px 12px 16px;
 }
 
-/*    Big Screen Css Codes      */
+/*    ==========================================Big Screen Css Codes=============================================      */
 
 @media screen and (min-width: 768px) {
   .logo {
-    flex: 3;
     margin-left: 17%;
     padding-top: 2%;
   }
 
-  .nav {
-    flex: 1;
+  .nav ul {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    color: #0549f3;
-    font-family: "Poppins", sans-serif;
-    margin-right: 15%;
-  }
-
-  .nav div {
-    height: 2px;
-    background-color: #fff;
-    font-size: 15px;
-    margin: 3px 0;
-    border-radius: 25px;
-    width: 20px;
-  }
-
-  .nav a {
+    font-size: small;
+    padding-left: 0%;
     text-decoration: none;
-    color: #344563;
-    font-weight: 500;
+    gap: 60px;
+    padding-right: 20%;
+    padding-top: 10%;
+  }
+
+  .nav ul li a {
+    text-decoration: none;
+    color: #001aff;
+    font-size: 15px;
+  }
+
+  .hamburger {
+    display: none;
   }
 
   .header {
     background-color: #fff;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 20%;
     align-items: center;
     font-size: 200%;
