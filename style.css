@@ -63,9 +63,9 @@ main {
   position: fixed;
   background-color: rgba(96, 112, 255, 0.9);
   backdrop-filter: blur(6px);
-  top: -30px;
-  padding-top: 8%;
+  padding-top: 20%;
   gap: 0;
+  margin-top: 0%;
   height: 100%;
   width: 100%;
   text-align: left;
