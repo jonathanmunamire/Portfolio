@@ -14,6 +14,16 @@ main {
   flex-direction: column;
 }
 
+/*.header {
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 20%;
+  align-items: center;
+  font-size: 200%;
+}*/
+
 .header {
   background-color: #fff;
   display: flex;
@@ -36,28 +46,110 @@ main {
   transition-duration: 1s;
 }
 
+/*.logo a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: #001aff;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  transition-duration: 1s;
+}*/
+
 .nav {
   display: flex;
   margin-right: 10%;
 }
 
-.nav ul {
-  display: none;
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  position: fixed;
+  background-color: #89abff;
+  left: 100%;
+  top: -30px;
+  gap: 0;
+  height: 100%;
+  width: 100%;
+  text-align: left;
+  transition: 0.3s;
+}
+
+.nav-menu.active {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  position: fixed;
+  background-color: #89abff;
+  top: -30px;
+  gap: 0;
+  height: 100%;
+  width: 100%;
+  text-align: left;
+  transition: 0.3s;
+  left: 0;
+}
+
+.nav-item {
+  padding-top: 10%;
+  text-decoration: none;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #fff;
 }
 
 .hamburger {
-  display: flex;
+  display: flex;   
   gap: 3px;
   flex-direction: column;
   height: 4px;
   width: 20px;
 }
 
-.bar {
+.hamburger.active {
+  color: #89abff;
+  position: fixed;
+}
+
+.hamburger.active .bar1 {
+  opacity: 0;
+}
+
+.hamburger.active .bar2 {
+  transform: rotate(45deg);
+  background-color: #fff;
+  
+}
+
+.hamburger.active .bar3 {
+  transform: translateY(-6px) rotate(-45deg);
+  background-color: #fff;
+}
+
+.bar1 {
   background-color: #001aff;
   border-radius: 5em;
   height: 3px;
-  width: 30px;
+  width: 25px;
+}
+
+.bar2 {
+  background-color: #001aff;
+  border-radius: 5em;
+  height: 3px;
+  width: 25px;
+}
+
+.bar3 {
+  background-color: #001aff;
+  border-radius: 5em;
+  height: 3px;
+  width: 25px;
 }
 
 .headline {
@@ -432,23 +524,12 @@ textarea {
     padding-top: 2%;
   }
 
-  .nav ul {
+  .nav {
     display: flex;
-    justify-content: space-between;
-    font-size: small;
-    padding-left: 0%;
-    text-decoration: none;
-    gap: 60px;
-    padding-right: 20%;
-    padding-top: 10%;
+    margin-right: 10%;
+    background-color: #001aff;
   }
-
-  .nav ul li a {
-    text-decoration: none;
-    color: #001aff;
-    font-size: 15px;
-  }
-
+  
   .hamburger {
     display: none;
   }
