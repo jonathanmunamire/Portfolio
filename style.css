@@ -46,7 +46,7 @@ main {
   flex-direction: column;
   align-content: space-between;
   position: fixed;
-  background-color: #89abff;
+  background-color: #6070ff;
   left: 100%;
   top: -30px;
   gap: 0;
@@ -61,19 +61,22 @@ main {
   flex-direction: column;
   align-content: space-between;
   position: fixed;
-  background-color: #89abff;
+  background-color: rgba(96, 112, 255, 0.9);
+  backdrop-filter: blur(6px);
   top: -30px;
+  padding-top: 8%;
   gap: 0;
   height: 100%;
   width: 100%;
   text-align: left;
-  transition: 0.3s;
+  transition: 0.2s;
   left: 0;
 }
 
 .nav-item {
-  padding-top: 10%;
+  padding-top: 5%;
   text-decoration: none;
+  font-weight: 600;
 }
 
 .nav-item a {
@@ -82,7 +85,7 @@ main {
 }
 
 .hamburger {
-  display: flex;   
+  display: flex;
   gap: 3px;
   flex-direction: column;
   height: 4px;
@@ -90,23 +93,8 @@ main {
 }
 
 .hamburger.active {
-  color: #89abff;
+  color: #6070ff;
   position: fixed;
-}
-
-.hamburger.active .bar1 {
-  opacity: 0;
-}
-
-.hamburger.active .bar2 {
-  transform: rotate(45deg);
-  background-color: #fff;
-  
-}
-
-.hamburger.active .bar3 {
-  transform: translateY(-6px) rotate(-45deg);
-  background-color: #fff;
 }
 
 .bar1 {
@@ -128,6 +116,20 @@ main {
   border-radius: 5em;
   height: 3px;
   width: 25px;
+}
+
+.hamburger.active .bar1 {
+  opacity: 0;
+}
+
+.hamburger.active .bar2 {
+  transform: rotate(45deg);
+  background-color: #fff;
+}
+
+.hamburger.active .bar3 {
+  transform: translateY(-6px) rotate(-45deg);
+  background-color: #fff;
 }
 
 .headline {
@@ -505,9 +507,40 @@ textarea {
   .nav {
     display: flex;
     margin-right: 10%;
-    background-color: #001aff;
   }
-  
+
+  .nav-menu {
+    display: unset;
+    flex-direction: unset;
+    align-content: unset;
+    position: unset;
+    background-color: unset;
+    left: unset;
+    top: unset;
+    gap: unset;
+    height: unset;
+    width: unset;
+    text-align: unset;
+    transition: unset;
+  }
+
+  .nav ul {
+    display: flex;
+    justify-content: space-between;
+    font-size: small;
+    padding-left: 0%;
+    text-decoration: none;
+    gap: 60px;
+    padding-right: 20%;
+    padding-top: 10%;
+  }
+
+  .nav ul li a {
+    text-decoration: none;
+    color: #001aff;
+    font-size: 15px;
+  }
+
   .hamburger {
     display: none;
   }
