@@ -371,7 +371,7 @@ img.counter {
   justify-content: flex-start;
   gap: 3%;
   padding-left: 0%;
-  color: #7A869A;
+  color: #7a869a;
   font-weight: 500;
   font-size: 13px;
 }
@@ -808,7 +808,7 @@ textarea {
     color: #fff;
   }
 
-  hr{
+  hr {
     height: 0.1px;
     width: 50%;
     padding-right: 50%;
