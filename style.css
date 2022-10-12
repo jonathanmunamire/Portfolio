@@ -205,7 +205,7 @@ label p {
   display: none;
 }
 
-.icons>li>a:hover {
+.icons > li > a:hover {
   filter: blur(1px);
 }
 
@@ -786,7 +786,6 @@ textarea {
     background: #0549f3;
     color: #fff;
   }
-
 
   .about {
     display: flex;
