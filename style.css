@@ -342,7 +342,7 @@ img.counter {
   border-radius: 20px;
   margin-left: 5%;
   margin-right: 5%;
-  padding: 2% 2% 5% 2%;
+  padding: 4% 2% 5% 2%;
   position: fixed;
   top: 20px;
   overflow: auto;
@@ -355,14 +355,30 @@ img.counter {
 }
 
 .popup-header {
+  height: 10vh;
   display: flex;
   justify-content: space-between;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.cancel-icon {
+  padding-top: 5%;
 }
 
 .popup-highlights {
   display: flex;
   justify-content: flex-start;
-  gap: 2%;
+  gap: 3%;
+  padding-left: 0%;
+  color: #7A869A;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.yeah {
+  color: #344563;
+  font-weight: 500;
 }
 
 .popup-content {
@@ -388,8 +404,9 @@ img.counter {
 
 .popup-btns {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 10px;
+  margin-top: 2%;
 }
 
 .popup-btn {
@@ -404,6 +421,7 @@ img.counter {
   color: #0c3fc0;
   text-decoration: none;
   transition: transform;
+  width: 50%;
 }
 
 .popup-btn:hover {
@@ -742,13 +760,14 @@ textarea {
   }
 
   .left-section {
-    flex: 2;
+    flex: 1;
   }
 
   .right-section {
     flex: 1;
     display: flex;
     flex-direction: column;
+    padding-left: 0%;
   }
 
   .stacks.popup {
@@ -759,7 +778,8 @@ textarea {
   .popup-btns {
     display: flex;
     flex-direction: row;
-    gap: 5%;
+    gap: 2%;
+    margin-top: 5%;
   }
 
   .popup-btn {
@@ -769,6 +789,7 @@ textarea {
     font-size: 14px;
     font-weight: 500;
     line-height: 24px;
+    height: 30%;
     letter-spacing: 0.03em;
     text-align: center;
     color: #0c3fc0;
@@ -785,6 +806,12 @@ textarea {
   .popup-btn:active {
     background: #0549f3;
     color: #fff;
+  }
+
+  hr{
+    height: 0.1px;
+    width: 50%;
+    padding-right: 50%;
   }
 
   .about {

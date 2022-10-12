@@ -22,7 +22,7 @@ const project = [{
     img2: "Snapshoot Portfolio (1).png",
     technologies: ["Html", "Css", "Javascript"],
     liveDemo: "#",
-    sourceCode: "",
+    sourceCode: "#",
     title1: "Tonic",
     title2: "Tonic",
 },
@@ -33,7 +33,7 @@ const project = [{
     img2: "Snapshoot Portfolio (3).png",
     technologies: ["Html", "Css", "Javascript"],
     liveDemo: "#",
-    sourceCode: "",
+    sourceCode: "#",
     title1: "Multi-Post Stories",
     title2: "Multi-Post Stories",
 },
@@ -44,7 +44,7 @@ const project = [{
     img2: "Snapshoot Portfolio.png",
     technologies: ["Html", "Css", "Javascript"],
     liveDemo: "#",
-    sourceCode: "",
+    sourceCode: "#",
     title1: "Facebook 360",
     title2: "Facebook 360",
 },
@@ -55,7 +55,7 @@ const project = [{
     img2: "Snapshoot Portfolio (1).png",
     technologies: ["Html", "Css", "Javascript"],
     liveDemo: "#",
-    sourceCode: "",
+    sourceCode: "#",
     title1: "Uber Navigation",
     title2: "Uber Navigation",
 }
@@ -107,7 +107,7 @@ project.forEach((projects) => {
                     <div class="cancel-icon"><img src="./ICONS/cancel-icon.png"></div>
                 </div>
                 <ul class="popup-highlights">
-                    <li>CANOPY</li>
+                    <li class="yeah">CANOPY</li>
                     <li><img class="counter" src="Counter.png"></li>
                     <li>Back End Dev</li>
                     <li><img class="counter" src="Counter.png"></li>
@@ -124,9 +124,10 @@ project.forEach((projects) => {
                             <li class="stack">Css</li>
                             <li class="stack">Javascript</li>
                         </ul>
+                        <hr>
                         <div class="popup-btns">
                             <a href="${projects.liveDemo}" class="popup-btn" target="_blank">See live <img src="./ICONS/live.png"></a>
-                            <a href="#" class="popup-btn" target="_blank">See source<img src="./ICONS/github.png"></a>
+                            <a href="${projects.sourceCode}" class="popup-btn" target="_blank">See source<img src="./ICONS/github.png"></a>
                         </div>
                     </div>
                 </div>
@@ -139,7 +140,6 @@ project.forEach((projects) => {
         })
     })
 })
-// const body = document.querySelector("body");
 
 
 
