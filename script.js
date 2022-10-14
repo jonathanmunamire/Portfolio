@@ -13,7 +13,7 @@ document.querySelectorAll(".nav-link").forEach(n => n.
         navMenu.classList.remove('active');
     }))
 
-//Dynamic Pages
+//////////////////////////////////////////Dynamic Pages///////////////////////////////////////////////
 
 const project = [{
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
@@ -143,5 +143,47 @@ project.forEach((projects) => {
 
 
 
+//////////////////////////////////// Form Validation //////////////////////////////////////////
+
+
+// const emailElement = document.getElementById('mail');
+// const form = document.querySelector('form');
+// const errorMessage = document.querySelector('.error');
+// const regEx = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+// emailElement.addEventListener('input',()=>{
+
+// })
+
+// form.addEventListener('submit',()=>{
+
+//      if (emailElement.value === emailElement.value.toLowerCase()) {
+//         form.submit();
+//         form.reset();
+        
+        
+//     } else if (email.validity.valueMissing){
+//         errorMessage.innerHTML ="Put an mail Address"
+        
+//     } else {
+//         errorMessage.innerHTML = "Your email should be in lowercase*";
+//     }
+// })
+
+const form = document.querySelector('form');   
+
+form.addEventListener('submit', (event) => { 
+  event.preventDefault(); 
+  const email = document.getElementById('mail').value; 
+
+  if (email.match(/^[a-z-0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z-0-9-]+(?:\.[a-z-0-9-]+)*$/)) { 
+    form.action = 'https://formspree.io/f/xeqdgvyj'; 
+    form.submit(); 
+    return true;
+  } else { 
+    document.querySelector('.error').innerHTML = 'your email should be in lowercase*'
+    return false;
+  } 
+});
 
 

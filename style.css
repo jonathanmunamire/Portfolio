@@ -567,6 +567,13 @@ textarea {
   padding: 12px 16px 12px 16px;
 }
 
+.error {
+  border-radius: 5px;
+  background-color: #fff;
+  color: rgb(255, 0, 0);
+  width: 90%;
+}
+
 /*    ==========================================Big Screen Css Codes=============================================      */
 
 @media screen and (min-width: 768px) {
@@ -905,5 +912,11 @@ textarea {
     padding-right: 30%;
     margin-left: 24px;
     margin-right: 24px;
+  }
+  .error {
+    border-radius: 5px;
+    background-color: #fff;
+    color: rgb(255, 0, 0);
+    width: unset;
   }
 }
