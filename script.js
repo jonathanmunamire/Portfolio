@@ -151,7 +151,7 @@ form.addEventListener('submit', (event) => {
 
   if (email.match(/^[a-z-0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z-0-9-]+(?:\.[a-z-0-9-]+)*$/)) { 
     form.action = 'https://formspree.io/f/xeqdgvyj'; 
-    form.submit(); 
+    submit(); 
     return true;
   } else { 
     document.querySelector('.error').innerHTML = 'your email should be in lowercase*'
