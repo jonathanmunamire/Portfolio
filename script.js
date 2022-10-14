@@ -141,34 +141,7 @@ project.forEach((projects) => {
     })
 })
 
-
-
 //////////////////////////////////// Form Validation //////////////////////////////////////////
-
-
-// const emailElement = document.getElementById('mail');
-// const form = document.querySelector('form');
-// const errorMessage = document.querySelector('.error');
-// const regEx = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-
-// emailElement.addEventListener('input',()=>{
-
-// })
-
-// form.addEventListener('submit',()=>{
-
-//      if (emailElement.value === emailElement.value.toLowerCase()) {
-//         form.submit();
-//         form.reset();
-        
-        
-//     } else if (email.validity.valueMissing){
-//         errorMessage.innerHTML ="Put an mail Address"
-        
-//     } else {
-//         errorMessage.innerHTML = "Your email should be in lowercase*";
-//     }
-// })
 
 const form = document.querySelector('form');   
 
