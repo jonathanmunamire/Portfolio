@@ -13,7 +13,7 @@ document.querySelectorAll(".nav-link").forEach(n => n.
         navMenu.classList.remove('active');
     }))
 
-//Dynamic Pages
+//////////////////////////////////////////Dynamic Pages///////////////////////////////////////////////
 
 const project = [{
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
@@ -141,7 +141,22 @@ project.forEach((projects) => {
     })
 })
 
+//////////////////////////////////// Form Validation //////////////////////////////////////////
 
+const form = document.querySelector('form');   
 
+form.addEventListener('submit', (event) => { 
+  event.preventDefault(); 
+  const email = document.getElementById('mail').value; 
+
+  if (email.match(/^[a-z-0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z-0-9-]+(?:\.[a-z-0-9-]+)*$/)) { 
+    form.action = 'https://formspree.io/f/xeqdgvyj'; 
+    form.submit(); 
+    return true;
+  } else { 
+    document.querySelector('.error').innerHTML = 'your email should be in lowercase*'
+    return false;
+  } 
+});
 
 
