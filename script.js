@@ -16,15 +16,15 @@ document.querySelectorAll(".nav-link").forEach(n => n.
 //////////////////////////////////////////Dynamic Pages///////////////////////////////////////////////
 
 const project = [{
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    description2: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    img1: "Snapshoot Portfolio (1).png",
-    img2: "Snapshoot Portfolio (1).png",
+    description: "This is a project build for a school of Languages Passionates. My First Project as a Micronaut at Microverse! Click the button below to see more about this project",
+    description2: "This is a project build for Polyglot Languages School, a school teaching a pack of languages and located in Kigali (Rwanda). It has been build in order to give as much information as possible about the Polyglot Language School and guide the user through the interesting pack of programs offered by the school",
+    img1: "Polyglot.png",
+    img2: "Polyglot.png",
     technologies: ["Html", "Css", "Javascript"],
-    liveDemo: "#",
-    sourceCode: "#",
-    title1: "Tonic",
-    title2: "Tonic",
+    liveDemo: "https://jonathanmunamire.github.io/Polyglot/",
+    sourceCode: "https://github.com/jonathanmunamire/Polyglot",
+    title1: "Polyglot",
+    title2: "Polyglot",
 },
 {
     description: "Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.",
@@ -113,7 +113,7 @@ project.forEach((projects) => {
                     <li><img class="counter" src="Counter.png"></li>
                     <li>2015</li>
                 </ul>
-                <img src="${projects.img2}">
+                <img class="popup-image" src="${projects.img2}">
                 <div class="popup-content">
                     <div class="left-section">
                         <p class="project-descritpion">${projects.description2}</p>
@@ -143,20 +143,20 @@ project.forEach((projects) => {
 
 //////////////////////////////////// Form Validation //////////////////////////////////////////
 
-const form = document.querySelector('form');   
+const form = document.querySelector('form');
 
-form.addEventListener('submit', (event) => { 
-  event.preventDefault(); 
-  const email = document.getElementById('mail').value; 
+form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const email = document.getElementById('mail').value;
 
-  if (email.match(/^[a-z-0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z-0-9-]+(?:\.[a-z-0-9-]+)*$/)) { 
-    form.action = 'https://formspree.io/f/xeqdgvyj'; 
-    submit(); 
-    return true;
-  } else { 
-    document.querySelector('.error').innerHTML = 'your email should be in lowercase*'
-    return false;
-  } 
+    if (email.match(/^[a-z-0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z-0-9-]+(?:\.[a-z-0-9-]+)*$/)) {
+        form.action = 'https://formspree.io/f/xeqdgvyj';
+        submit();
+        return true;
+    } else {
+        document.querySelector('.error').innerHTML = 'your email should be in lowercase*'
+        return false;
+    }
 });
 
 

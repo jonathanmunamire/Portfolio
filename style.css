@@ -366,6 +366,10 @@ img.counter {
   padding-top: 5%;
 }
 
+.popup-image {
+  width: 85vw;
+}
+
 .popup-highlights {
   display: flex;
   justify-content: flex-start;
@@ -753,6 +757,10 @@ textarea {
   .popup-header {
     display: flex;
     justify-content: space-between;
+  }
+
+  .popup-image {
+    width: 70vw;
   }
 
   .popup-highlights {
