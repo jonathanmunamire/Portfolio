@@ -19,9 +19,11 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 20%;
   align-items: center;
-  font-size: 200%;
+  position: fixed;
+  width: 100%;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 
 .logo a {
@@ -39,6 +41,7 @@ main {
 .nav {
   display: flex;
   margin-right: 10%;
+  text-align: center;
 }
 
 .nav-menu {
@@ -48,9 +51,8 @@ main {
   position: fixed;
   background-color: #6070ff;
   left: 100%;
-  top: -30px;
   gap: 0;
-  height: 100%;
+  top: -30px;
   width: 100%;
   text-align: left;
   transition: 0.3s;
@@ -74,7 +76,6 @@ main {
 }
 
 .nav-item {
-  padding-top: 5%;
   text-decoration: none;
   font-weight: 600;
 }
@@ -582,8 +583,7 @@ textarea {
 
 @media screen and (min-width: 768px) {
   .logo {
-    margin-left: 17%;
-    padding-top: 2%;
+    margin-left: 10%;
   }
 
   .nav {
@@ -614,7 +614,6 @@ textarea {
     text-decoration: none;
     gap: 60px;
     padding-right: 20%;
-    padding-top: 10%;
   }
 
   .nav ul li a {
@@ -632,9 +631,11 @@ textarea {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 20%;
     align-items: center;
-    font-size: 200%;
+    position: fixed;
+    width: 100%;
+    padding-top: 0%;
+    padding-bottom: 0%;
   }
 
   .headline {
