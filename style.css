@@ -19,9 +19,9 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 20%;
   align-items: center;
-  font-size: 200%;
+  position: fixed;
+  width: 100%;
 }
 
 .logo a {
@@ -48,9 +48,7 @@ main {
   position: fixed;
   background-color: #6070ff;
   left: 100%;
-  top: -30px;
   gap: 0;
-  height: 100%;
   width: 100%;
   text-align: left;
   transition: 0.3s;
@@ -614,7 +612,6 @@ textarea {
     text-decoration: none;
     gap: 60px;
     padding-right: 20%;
-    padding-top: 10%;
   }
 
   .nav ul li a {
@@ -632,9 +629,9 @@ textarea {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 20%;
     align-items: center;
-    font-size: 200%;
+    position: fixed;
+    width: 100%;
   }
 
   .headline {
