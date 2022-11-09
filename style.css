@@ -39,6 +39,7 @@ main {
 .nav {
   display: flex;
   margin-right: 10%;
+  text-align: center;
 }
 
 .nav-menu {
@@ -49,6 +50,7 @@ main {
   background-color: #6070ff;
   left: 100%;
   gap: 0;
+  top: -30px;
   width: 100%;
   text-align: left;
   transition: 0.3s;
@@ -72,7 +74,6 @@ main {
 }
 
 .nav-item {
-  padding-top: 5%;
   text-decoration: none;
   font-weight: 600;
 }
@@ -580,8 +581,7 @@ textarea {
 
 @media screen and (min-width: 768px) {
   .logo {
-    margin-left: 17%;
-    padding-top: 2%;
+    margin-left: 10%;
   }
 
   .nav {
