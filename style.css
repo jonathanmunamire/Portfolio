@@ -22,6 +22,8 @@ main {
   align-items: center;
   position: fixed;
   width: 100%;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 
 .logo a {
@@ -632,6 +634,8 @@ textarea {
     align-items: center;
     position: fixed;
     width: 100%;
+    padding-top: 0%;
+    padding-bottom: 0%;
   }
 
   .headline {
