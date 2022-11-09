@@ -18,8 +18,8 @@ document.querySelectorAll(".nav-link").forEach(n => n.
 const project = [{
     description: "This is a project build for a school of Languages Passionates. My First Project as a Micronaut at Microverse! Click the button below to see more about this project",
     description2: "This is a project build for Polyglot Languages School, a school teaching a pack of languages and located in Kigali (Rwanda). It has been build in order to give as much information as possible about the Polyglot Language School and guide the user through the interesting pack of programs offered by the school",
-    img1: "Polyglot1.png",
-    img2: "Polyglot.png",
+    img1: "./IMG/Screenshot from 2022-11-09 17-08-05.png",
+    img2: "./IMG/Screenshot from 2022-11-09 17-08-05.png",
     technologies: ["Html", "Css", "Javascript"],
     liveDemo: "https://jonathanmunamire.github.io/Polyglot/",
     sourceCode: "https://github.com/jonathanmunamire/Polyglot",
